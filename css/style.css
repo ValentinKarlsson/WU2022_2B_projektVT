@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#index_wrapper {
+    display: grid;
+    grid-template-rows: 0.24fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "he he"
+    "a1 s1"
+    "s2 a2"
+    "a3 s3"
+    ;
+    height: 100%;
+    width: 100%;
+}
+
+#index_header {
+    grid-area: he;
+    background-color: aqua;
+}
+
+#index_Ryssland {
+    grid-area: s1;
+    background-color: red;
+}
+
+#Bild_Ryssland {
+    grid-area: a1;
+    background-color: blue;
+}
+
+#index_Belarus {
+    grid-area: s2;
+    background-color: blueviolet;
+}
+
+#Bild_Belarus {
+    grid-area: a2;
+    background-color: brown;
+}
+
+#index_Litauen {
+    grid-area: s3;
+    background-color: burlywood;
+}
+
+#Bild_Litauen {
+    grid-area: a3;
+    background-color: chocolate;
+}
