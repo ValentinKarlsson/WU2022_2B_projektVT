@@ -120,7 +120,7 @@
     background-color: chocolate;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
     
     .burger {
         display: none;
@@ -150,4 +150,64 @@
         transform: none;
     }
 
+}
+
+
+/* CSS för ryssland.html (Andra sidan)*/
+
+#ryssland_wrapper {
+    display: grid;
+    grid-template-rows: 8fr 1fr 4.9fr 4.9fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "se_1 se_2"
+    "ar_1 ar_2"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#ryssland_header {
+    grid-area: he;
+    background-color: greenyellow;
+}
+
+#ryssland_nav {
+    grid-area: na;
+    background-color: yellow;
+}
+
+#section_ryssland_kultur {
+    grid-area: se_1;
+    background-color: red;
+}
+
+#article_ryssland_kultur {
+    grid-area: ar_1;
+    background-color: royalblue;
+}
+
+#section_ryssland_historia {
+    grid-area: se_2;
+    background-color: lightslategrey;
+}
+
+#article_ryssland_historia {
+    grid-area: ar_2;
+    background-color: firebrick;
+}
+
+@media screen and (min-width: 800px) {
+    #ryssland_wrapper {
+        display: grid;
+        grid-template-rows: 7fr 1fr 4.6fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "he he he he"
+        "na na na na"
+        "se_1 ar_1 se_2 ar_2"
+        ;
+    }
 }
