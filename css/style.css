@@ -156,13 +156,13 @@
 
 #ryssland_wrapper {
     display: grid;
-    grid-template-rows: 1fr 8fr 4.9fr 4.9fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "he na"
-    "he na"
-    "se_1 se_2"
-    "ar_1 ar_2"
+    "na_1 na_1 na_1 na_2"
+    "he he he he"
+    "se_1 se_1 se_2 se_2"
+    "ar_1 ar_1 ar_2 ar_2"
     ;
     height: 100vh;
     width: 100vw;
@@ -174,8 +174,13 @@
 }
 
 #ryssland_nav {
-    grid-area: na;
+    grid-area: na_2;
     background-color: yellow;
+}
+
+#ryssland_headline {
+    grid-area: na_1;
+    background-color: yellowgreen;
 }
 
 #section_ryssland_kultur {
@@ -201,12 +206,149 @@
 @media screen and (min-width: 800px) {
     #ryssland_wrapper {
         display: grid;
-        grid-template-rows: 7fr 1fr 4.6fr;
+        grid-template-rows: 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
+        "na_2 na_2 na_2 na_2"
         "he he he he"
-        "na na na na"
         "se_1 ar_1 se_2 ar_2"
         ;
+    }
+    #ryssland_headline {
+        display: none;
+    }
+}
+
+/* CSS för belarus.html (Tredje sidan)*/
+
+#belarus_wrapper {
+    display: grid;
+    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "na_1 na_1 na_1 na_2"
+    "he he he he"
+    "se_1 se_1 se_2 se_2"
+    "ar_1 ar_1 ar_2 ar_2"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#belarus_header {
+    grid-area: he;
+    background-color: greenyellow;
+}
+
+#belarus_nav {
+    grid-area: na_2;
+    background-color: yellow;
+}
+
+#belarus_headline {
+    grid-area: na_1;
+    background-color: yellowgreen;
+}
+
+#section_belarus_kultur {
+    grid-area: se_1;
+    background-color: red;
+}
+
+#article_belarus_kultur {
+    grid-area: ar_1;
+    background-color: royalblue;
+}
+
+#section_belarus_historia {
+    grid-area: se_2;
+    background-color: lightslategrey;
+}
+
+#article_belarus_historia {
+    grid-area: ar_2;
+    background-color: firebrick;
+}
+
+@media screen and (min-width: 800px) {
+    #belarus_wrapper {
+        display: grid;
+        grid-template-rows: 1fr 7fr 4.6fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "na_2 na_2 na_2 na_2"
+        "he he he he"
+        "se_1 ar_1 se_2 ar_2"
+        ;
+    }
+    #belarus_headline {
+        display: none;
+    }
+}
+
+/* CSS för litauen.html (Fjärde sidan)*/
+
+#litauen_wrapper {
+    display: grid;
+    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "na_1 na_1 na_1 na_2"
+    "he he he he"
+    "se_1 se_1 se_2 se_2"
+    "ar_1 ar_1 ar_2 ar_2"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#litauen_header {
+    grid-area: he;
+    background-color: greenyellow;
+}
+
+#litauen_nav {
+    grid-area: na_2;
+    background-color: yellow;
+}
+
+#litauen_headline {
+    grid-area: na_1;
+    background-color: yellowgreen;
+}
+
+#section_litauen_kultur {
+    grid-area: se_1;
+    background-color: red;
+}
+
+#article_litauen_kultur {
+    grid-area: ar_1;
+    background-color: royalblue;
+}
+
+#section_litauen_historia {
+    grid-area: se_2;
+    background-color: lightslategrey;
+}
+
+#article_litauen_historia {
+    grid-area: ar_2;
+    background-color: firebrick;
+}
+
+@media screen and (min-width: 800px) {
+    #litauen_wrapper {
+        display: grid;
+        grid-template-rows: 1fr 7fr 4.6fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "na_2 na_2 na_2 na_2"
+        "he he he he"
+        "se_1 ar_1 se_2 ar_2"
+        ;
+    }
+    #litauen_headline {
+        display: none;
     }
 }
