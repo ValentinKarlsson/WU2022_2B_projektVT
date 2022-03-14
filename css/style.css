@@ -23,7 +23,7 @@
     background-color: aqua;
 }
 
-#index_nav {
+#nav{
     grid-area: na;
     display: flex;
     justify-content: flex-end;
@@ -33,7 +33,7 @@
     height: 0.24fr;
 }
 
-#index_nav-links {
+#nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -47,15 +47,15 @@
     transition: all 0.5s;
 }
 
-.index_nav-active {
+.nav-active {
     transform: translateY(100vh);
 }
 
-#index_nav-links li {
+#nav-links li {
     list-style: none;
 }
 
-#index_nav-links {
+#nav-links {
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: rgb(223, 144, 70);
@@ -137,7 +137,7 @@
         ;
     }
 
-    #index_nav-links {
+    #nav-links {
         flex-direction: row;
         height: 0;
         top: 65px;
@@ -145,7 +145,7 @@
         width: 0.17fr;
     }
 
-    #index_nav-active {
+    #nav-active {
         transform: none;
     }
 
@@ -159,7 +159,7 @@
     grid-template-rows: 1fr 8fr 5fr 5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "na_1 na_1 na_1 na_2"
+    "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
@@ -171,11 +171,6 @@
 #ryssland_header {
     grid-area: he;
     background-color: greenyellow;
-}
-
-#ryssland_nav {
-    grid-area: na_2;
-    background-color: yellow;
 }
 
 #ryssland_headline {
@@ -209,7 +204,7 @@
         grid-template-rows: 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "na_2 na_2 na_2 na_2"
+        "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
@@ -217,6 +212,8 @@
     #ryssland_headline {
         display: none;
     }
+    /* Skriv in #nav{...} för att lösa problemet anvgående nav:en för alla sidorna för min hemsida */
+
 }
 
 /* CSS för belarus.html (Tredje sidan)*/
@@ -226,7 +223,7 @@
     grid-template-rows: 1fr 8fr 5fr 5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "na_1 na_1 na_1 na_2"
+    "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
@@ -238,11 +235,6 @@
 #belarus_header {
     grid-area: he;
     background-color: greenyellow;
-}
-
-#belarus_nav {
-    grid-area: na_2;
-    background-color: yellow;
 }
 
 #belarus_headline {
@@ -276,7 +268,7 @@
         grid-template-rows: 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "na_2 na_2 na_2 na_2"
+        "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
@@ -293,7 +285,7 @@
     grid-template-rows: 1fr 8fr 5fr 5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "na_1 na_1 na_1 na_2"
+    "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
@@ -305,11 +297,6 @@
 #litauen_header {
     grid-area: he;
     background-color: greenyellow;
-}
-
-#litauen_nav {
-    grid-area: na_2;
-    background-color: yellow;
 }
 
 #litauen_headline {
@@ -343,7 +330,7 @@
         grid-template-rows: 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "na_2 na_2 na_2 na_2"
+        "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
