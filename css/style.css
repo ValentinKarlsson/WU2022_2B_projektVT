@@ -201,19 +201,27 @@
 @media screen and (min-width: 800px) {
     #ryssland_wrapper {
         display: grid;
-        grid-template-rows: 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
+        "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
     }
-    #ryssland_headline {
-        display: none;
-    }
     /* Skriv in #nav{...} för att lösa problemet anvgående nav:en för alla sidorna för min hemsida */
+    #nav-links {
+        flex-direction: row;
+        height: 0;
+        top: 65px;
+        left: 0px;
+        width: 0.17fr;
+    }
 
+    #nav-active {
+        transform: none;
+    }
 }
 
 /* CSS för belarus.html (Tredje sidan)*/
@@ -265,16 +273,25 @@
 @media screen and (min-width: 800px) {
     #belarus_wrapper {
         display: grid;
-        grid-template-rows: 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
+        "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
     }
-    #belarus_headline {
-        display: none;
+    #nav-links {
+        flex-direction: row;
+        height: 0;
+        top: 65px;
+        left: 0px;
+        width: 0.17fr;
+    }
+
+    #nav-active {
+        transform: none;
     }
 }
 
@@ -327,15 +344,24 @@
 @media screen and (min-width: 800px) {
     #litauen_wrapper {
         display: grid;
-        grid-template-rows: 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
+        "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
         ;
     }
-    #litauen_headline {
-        display: none;
+    #nav-links {
+        flex-direction: row;
+        height: 0;
+        top: 65px;
+        left: 0px;
+        width: 0.17fr;
+    }
+
+    #nav-active {
+        transform: none;
     }
 }
