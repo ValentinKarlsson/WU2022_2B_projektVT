@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    padding: 10px;
+    margin: 10px;
+    text-align: inherit;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -17,6 +27,13 @@ header {
 figure {
     display: flex;
     align-items: center;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+figure:hover {
+    max-zoom: 100%;
 }
 
 #Logga {
@@ -26,7 +43,20 @@ figure {
 img {
     height: 50%;
     width: 100%;
-    border: 1.5px solid black;
+    border: 1px solid black;
+    transition: 0.5s all ease-in-out;
+}
+
+#Bild_Ryssland:hover img {
+    transform: scale(1.045);
+}
+
+#Bild_Belarus:hover img {
+    transform: scale(1.045);
+}
+
+#Bild_Litauen:hover img {
+    transform: scale(1.045);
 }
 
 /* CSS för index.html (Första sidan) */
@@ -47,8 +77,15 @@ img {
 }
 
 #index_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: he;
     background-color: aqua;
+    padding: 5px;
+    margin-right: 5px;
 }
 
 /* Behöver ändra id:et "nav" till inget id alls för naven med både hamburgamenyn och länkarna. */
@@ -59,7 +96,7 @@ img {
     align-items: center;
     background-color: yellow;
     font-family: sans-serif;
-    height: 0.24fr;
+    position: relative;
 }
 
 #nav-links {
@@ -80,14 +117,19 @@ img {
     transform: translateY(95vh);
 }
 
+#nav-links ul { /* Ändra något här för att lösa ett problem med hur länkarna ser ut när man trycker ner sidan till att bli en mobils storlek. */
+    display: flex;
+    align-items: center;
+}
+
 #nav-links li {
     list-style: none;
 }
 
-#nav-links {
+#nav-links a {
     text-decoration: none;
     letter-spacing: 0.1875rem;
-    color: rgb(223, 144, 70);
+    color: red;
     font-weight: bold;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -120,6 +162,11 @@ img {
 }
 
 #index_Ryssland {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: s1;
     background-color: red;
     
@@ -131,6 +178,11 @@ img {
 }
 
 #index_Belarus {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: s2;
     background-color: blueviolet;
 }
@@ -141,6 +193,11 @@ img {
 }
 
 #index_Litauen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: s3;
     background-color: burlywood;
 }
@@ -163,15 +220,16 @@ img {
         "he he he"
         "na na na"
         "s1 a2 s3"
-        "a1 s2 a3"
+        "a1 s2 a3" 
         ;
     }
 
     #nav-links {
         flex-direction: row;
         height: 100px; /* Ändra det här för att kanske lösa ett problem för nav-länkarna */
-        top: 35px !important;
+        top: 0px;
         left: 0px;
+        width: auto;
     }
 
     #nav-active {
@@ -202,14 +260,25 @@ img {
     background-color: greenyellow;
 }
 
+#ryssland_header:hover img {
+    transform: scale(1.015);
+}
+
 #ryssland_headline {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
 }
 
 #section_ryssland_kultur {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_1;
     background-color: red;
 }
@@ -220,6 +289,10 @@ img {
 }
 
 #section_ryssland_historia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_2;
     background-color: lightslategrey;
 }
@@ -274,14 +347,25 @@ img {
     background-color: greenyellow;
 }
 
+#belarus_header:hover img {
+    transform: scale(1.015);
+}
+
 #belarus_headline {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
 }
 
 #section_belarus_kultur {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_1;
     background-color: red;
 }
@@ -292,6 +376,10 @@ img {
 }
 
 #section_belarus_historia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_2;
     background-color: lightslategrey;
 }
@@ -346,14 +434,25 @@ img {
     background-color: greenyellow;
 }
 
+#litauen_header:hover img {
+    transform: scale(1.015);
+}
+
 #litauen_headline {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
 }
 
 #section_litauen_kultur {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_1;
     background-color: red;
 }
@@ -364,6 +463,10 @@ img {
 }
 
 #section_litauen_historia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
     grid-area: se_2;
     background-color: lightslategrey;
 }
