@@ -85,7 +85,7 @@ img {
     grid-area: he;
     background-color: aqua;
     padding: 5px;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 /* Behöver ändra id:et "nav" till inget id alls för naven med både hamburgamenyn och länkarna. */
@@ -97,20 +97,23 @@ img {
     background-color: yellow;
     font-family: sans-serif;
     position: relative;
+    height: 0.17fr;
 }
 
 #nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 90vh; /* Ändra detta för att lösa ett problem med nav-länkarna för dator-layouten */
-    position: absolute;
+    height: 85vh; /* Ändra detta för att lösa ett problem med nav-länkarna för dator-layouten */
     top: -90vh;
     right: 0px;
-    width: 0.5fr;
+    width: auto;
+    position: fixed;
     align-items: center;
     background-color: yellow;
     transition: all 0.5s;
+    padding: 5px;
+    margin: 5px;
 }
 
 .nav-active {
@@ -169,12 +172,16 @@ img {
     border-radius: 5px;
     grid-area: s1;
     background-color: red;
-    
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
 }
 
 #Bild_Ryssland {
     grid-area: a1;
     background-color: blue;
+    padding: 5px;
+    margin: 5px;
 }
 
 #index_Belarus {
@@ -185,11 +192,16 @@ img {
     border-radius: 5px;
     grid-area: s2;
     background-color: blueviolet;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
 }
 
 #Bild_Belarus {
     grid-area: a2;
     background-color: brown;
+    padding: 5px;
+    margin: 5px;
 }
 
 #index_Litauen {
@@ -200,11 +212,16 @@ img {
     border-radius: 5px;
     grid-area: s3;
     background-color: burlywood;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
 }
 
 #Bild_Litauen {
     grid-area: a3;
     background-color: chocolate;
+    padding: 5px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 600px) {
@@ -227,13 +244,19 @@ img {
     #nav-links {
         flex-direction: row;
         height: 100px; /* Ändra det här för att kanske lösa ett problem för nav-länkarna */
-        top: 0px;
+        top: 0 !important;
         left: 0px;
-        width: auto;
+        right: none !important;
+        width: 100%;
+        position: unset;
     }
 
-    #nav-active {
+    .nav-active {
         transform: none;
+    }
+
+    #index_Belarus {
+        overflow: hidden;
     }
 
 }
@@ -258,6 +281,8 @@ img {
 #ryssland_header {
     grid-area: he;
     background-color: greenyellow;
+    padding: 5px;
+    margin: 5px;
 }
 
 #ryssland_header:hover img {
@@ -272,6 +297,8 @@ img {
     border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_ryssland_kultur {
@@ -279,13 +306,18 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_1;
     background-color: red;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_ryssland_kultur {
     grid-area: ar_1;
     background-color: royalblue;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_ryssland_historia {
@@ -293,16 +325,26 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_2;
     background-color: lightslategrey;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_ryssland_historia {
     grid-area: ar_2;
     background-color: firebrick;
+    padding: 5px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 800px) {
+
+    .burger {
+        display: none;
+    }
+
     #ryssland_wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr 7fr 4.6fr;
@@ -318,9 +360,10 @@ img {
         flex-direction: row;
         top: 55px;
         left: 0px;
+        position: none;
     }
 
-    #nav-active {
+    .nav-active {
         transform: none;
     }
 }
@@ -345,6 +388,8 @@ img {
 #belarus_header {
     grid-area: he;
     background-color: greenyellow;
+    padding: 5px;
+    margin: 5px;
 }
 
 #belarus_header:hover img {
@@ -359,6 +404,8 @@ img {
     border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_belarus_kultur {
@@ -366,13 +413,18 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_1;
     background-color: red;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_belarus_kultur {
     grid-area: ar_1;
     background-color: royalblue;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_belarus_historia {
@@ -380,16 +432,26 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_2;
     background-color: lightslategrey;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_belarus_historia {
     grid-area: ar_2;
     background-color: firebrick;
+    padding: 5px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 800px) {
+
+    .burger {
+        display: none;
+    }
+
     #belarus_wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr 7fr 4.6fr;
@@ -405,9 +467,10 @@ img {
         flex-direction: row;
         top: 55px;
         left: 0px;
+        position: none;
     }
 
-    #nav-active {
+    .nav-active {
         transform: none;
     }
 }
@@ -432,6 +495,8 @@ img {
 #litauen_header {
     grid-area: he;
     background-color: greenyellow;
+    padding: 5px;
+    margin: 5px;
 }
 
 #litauen_header:hover img {
@@ -446,6 +511,8 @@ img {
     border-radius: 5px;
     grid-area: na_1;
     background-color: yellowgreen;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_litauen_kultur {
@@ -453,13 +520,18 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_1;
     background-color: red;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_litauen_kultur {
     grid-area: ar_1;
     background-color: royalblue;
+    padding: 5px;
+    margin: 5px;
 }
 
 #section_litauen_historia {
@@ -467,16 +539,26 @@ img {
     align-items: center;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 5px;
     grid-area: se_2;
     background-color: lightslategrey;
+    padding: 5px;
+    margin: 5px;
 }
 
 #article_litauen_historia {
     grid-area: ar_2;
     background-color: firebrick;
+    padding: 5px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 800px) {
+
+    .burger {
+        display: none;
+    }
+
     #litauen_wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr 7fr 4.6fr;
@@ -492,9 +574,10 @@ img {
         flex-direction: row;
         top: 55px;
         left: 0px;
+        position: none;
     }
 
-    #nav-active {
+    .nav-active {
         transform: none;
     }
 }
