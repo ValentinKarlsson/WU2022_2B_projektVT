@@ -6,6 +6,25 @@
     box-sizing: border-box;
 }
 
+/* Footer stylning */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    grid-area: fo;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: red;
+    padding: 0.3125rem;
+    margin: 0.3125rem;
+}
+
+/* Footer text som tas bort för endast mobile layout */
+
+.footer_text2 {
+    display: none;
+}
 
 /* h-taggarna stylas till seriffer nedan */
 
@@ -91,13 +110,14 @@ img {
 
 #index_wrapper {
     display: grid;
-    grid-template-rows: minmax(50px, 0.24fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr);
+    grid-template-rows: minmax(50px, 0.24fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(80px, 0.24fr);
     grid-template-columns: minmax(100px, 1fr) minmax(100px, 0.5fr) minmax(100px, 0.5fr);
     grid-template-areas: 
     "he he na"
     "a1 s1 s1"
     "s2 a2 a2"
     "a3 s3 s3"
+    "fo fo fo"
     ;
     max-width: fit-content;
     height: 100vh;
@@ -257,13 +277,14 @@ nav {
     }
 
     #index_wrapper {
-        grid-template-rows: 0.17fr 0.17fr 1fr 1fr;
+        grid-template-rows: 0.17fr 0.17fr 1fr 1fr 0.17fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "he he he"
         "na na na"
         "s1 a2 s3"
         "a1 s2 a3" 
+        "fo fo fo"
         ;
     }
 
@@ -280,19 +301,24 @@ nav {
         transform: none;
     }
 
+    .footer_text2 {
+        display: grid;
+    }
+
 }
 
 /* CSS för ryssland.html (Andra sidan) */
 
 #ryssland_wrapper {
     display: grid;
-    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-rows: 1fr 8fr 5fr 5fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
+    "fo fo fo fo"
     ;
     max-width: fit-content;
     height: 100vh;
@@ -365,13 +391,14 @@ nav {
 
     #ryssland_wrapper {
         display: grid;
-        grid-template-rows: 1fr 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
+        "fo fo fo fo"
         ;
     }
     #nav-links {
@@ -389,13 +416,14 @@ nav {
 
 #belarus_wrapper {
     display: grid;
-    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-rows: 1fr 8fr 5fr 5fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
+    "fo fo fo fo"
     ;
     max-width: fit-content;
     height: 100vh;
@@ -468,13 +496,14 @@ nav {
 
     #belarus_wrapper {
         display: grid;
-        grid-template-rows: 1fr 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
+        "fo fo fo fo"
         ;
     }
     #nav-links {
@@ -492,13 +521,14 @@ nav {
 
 #litauen_wrapper {
     display: grid;
-    grid-template-rows: 1fr 8fr 5fr 5fr;
+    grid-template-rows: 1fr 8fr 5fr 5fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "na_1 na_1 na_1 na"
     "he he he he"
     "se_1 se_1 se_2 se_2"
     "ar_1 ar_1 ar_2 ar_2"
+    "fo fo fo fo"
     ;
     max-width: fit-content;
     height: 100vh;
@@ -571,13 +601,14 @@ nav {
 
     #litauen_wrapper {
         display: grid;
-        grid-template-rows: 1fr 1fr 7fr 4.6fr;
+        grid-template-rows: 1fr 1fr 7fr 4.6fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "na_1 na_1 na_1 na_1"
         "na na na na"
         "he he he he"
         "se_1 ar_1 se_2 ar_2"
+        "fo fo fo fo"
         ;
     }
     #nav-links {
