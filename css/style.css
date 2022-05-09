@@ -6,6 +6,40 @@
     box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 68, 51);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(220, 20, 60); /* Borde antingen ta bort detta eller ändra till en bättre färg. */ 
+  }
+
+/* Styling på a-taggar */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Footer stylning */
 
 footer {
@@ -47,7 +81,8 @@ h4 {
 /* body stylas för en specifik färg */
 
 body {
-    background-color: darkred;
+    /*background-color: darkred;*/
+    background-color: rgb(136, 8, 8)
 }
 
 /* p-taggen stylas både till en san-seriff och har både padding och marginal för att innehållet på hemsidan ska andas, men att även för att hemsidan ska bli ännu användarvänligare.*/
@@ -183,7 +218,6 @@ nav {
     letter-spacing: 0.1875rem;
     color: darkred;
     font-weight: bold;
-    font-size: 1.25rem;
     text-transform: uppercase;
 }
 
