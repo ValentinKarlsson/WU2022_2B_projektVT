@@ -1,5 +1,7 @@
 /* För att göra en bakgrund för mina texter: margin (Utanför border), padding (Inanför border), border-radius och border. */
 
+/* view-width view-height och position:absolute; för bilderna */ 
+
 * {
     padding: 0;
     margin: 0;
@@ -91,7 +93,7 @@ p {
     margin: 0.625rem;
     text-align: inherit;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 /* header stylas för att bli mer centerad på skärmen för att göra det mer användarvänligare på hemsidan. */
@@ -391,6 +393,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_ryssland_kultur {
@@ -409,6 +413,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_ryssland_historia {
@@ -496,6 +502,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_belarus_kultur {
@@ -514,6 +522,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_belarus_historia {
@@ -601,6 +611,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_litauen_kultur {
@@ -619,6 +631,8 @@ nav {
     background-color: red;
     padding: 0.3125rem;
     margin: 0.3125rem;
+    overflow: auto;
+    min-height: 300px;
 }
 
 #article_litauen_historia {
